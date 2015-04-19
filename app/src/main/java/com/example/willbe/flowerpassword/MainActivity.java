@@ -99,6 +99,9 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
                         } else {
                             Toast.makeText(this, "Nothing!", Toast.LENGTH_LONG).show();
                         }
+                        if (SettingsActivity.isShowAfterEncryption(this)){
+                            onBackPressed();
+                        }
 
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
