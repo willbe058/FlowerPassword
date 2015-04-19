@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red">#e51c23</color>
+    <color name="red_pressed">#f36c60</color>
+    <color name="half_black">#259b24</color>
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="light_blue">#03a9f4</color>
+    <color name="blue_pressed">#81d4fa</color>
+    <color name="blue_dark">#0288d1</color>
+    <color name="orange">#ff9800</color>
+    <color name="orange_pressed">#ffcc80</color>
+    <color name="amber">#ffc107</color>
+    <color name="blue">#5677fc</color>
+    <color name="blue_dark_t">#455ede</color>
+    <color name="indigo">#ff5722</color>
+    <color name="indigo_900">#1A237E</color>
+    <color name="indigo_tran">#99e6e6e6</color>
+    <color name="indigo_light">#9fa8da</color>
+    <color name="indigo_dark">#e64a19</color>
+    <color name="indigo_300">#ff8a65</color>
+    <color name="indigo_400">#ff7043</color>
+    <color name="pink">#ffc107</color>
+    <color name="pink_pre">#ffd740</color>
+    <color name="title_color">#5677fc</color>
+    <color name="day_color">#f6f7f9</color>
+    <color name="day">#3f51b5</color>
+    <color name="h">#7c4dff</color>
+    <color name="pink_title">#ff4081</color>
+    <color name="pink_day">#e00032</color>
+    <color name="pink_des">#ff2d6f</color>
+    <color name="purple_day">#6200ea</color>
+    <color name="purple_des">#651fff</color>
+    <color name="white_menu">#95FFFFFF</color>
+    <color name="accent_translucent">#80e91e63</color>
+
+</resources>
