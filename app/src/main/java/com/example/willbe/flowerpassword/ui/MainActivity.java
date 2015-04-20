@@ -1,22 +1,20 @@
-package com.example.willbe.flowerpassword;
+package com.example.willbe.flowerpassword.ui;
 
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Paint;
-import android.graphics.Typeface;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.willbe.flowerpassword.EncryptionArithmetic.Ecryption;
+import com.example.willbe.flowerpassword.R;
 import com.github.clans.fab.FloatingActionButton;
 import com.github.clans.fab.FloatingActionMenu;
 
@@ -99,7 +97,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
                         } else {
                             Toast.makeText(this, "Nothing!", Toast.LENGTH_LONG).show();
                         }
-                        if (SettingsActivity.isShowAfterEncryption(this)){
+                        if (!SettingsActivity.isShowAfterEncryption(this)){
                             onBackPressed();
                         }
 
