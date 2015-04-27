@@ -36,23 +36,32 @@ public class MainActivity : AppCompatActivity(), View.OnClickListener {
         initView()
     }
 
+    /**
+     * this is a very easy way to make a toast in an Activity
+     * @param message the message you want to display
+     * @param duration the duration of a toast animation(optional)
+     */
     private fun MainActivity.toast(message: CharSequence, duration: Int = Toast.LENGTH_LONG) {
         Toast.makeText(this, message, duration).show()
     }
 
-    private fun<T> id(id: Int): T {
-        return findViewById(id) as T
 
-    }
+    /**
+     * this is a simple method for me to simplify  the view initialization
+     * @author willbe058@gmail.com
+     * @param id the View's Resource id
+     * @return T the generated type of the View
+     */
+    private fun<T> id(id: Int): T = findViewById(id) as T
 
     private fun initView() {
         memPassET = id(R.id.mem_pass)
 
 //        memPassET = (findViewById(R.id.mem_pass) as EditText)
-        keyWordET = (findViewById(R.id.keyword) as EditText)
-        menu = (findViewById(R.id.menu) as FloatingActionMenu)
-        encryptButton = (findViewById(R.id.encryptItem1) as FloatingActionButton)
-        display = findViewById(R.id.finalPass) as TextView
+        keyWordET = id(R.id.keyword)
+        menu = id(R.id.menu)
+        encryptButton = id(R.id.encryptItem1)
+        display = id(R.id.finalPass)
         //        copyBtn = (Button) findViewById(R.id.copy);
         //        copyBtn.setOnClickListener(this);
         encryptButton!!.setOnClickListener(this)
@@ -60,6 +69,10 @@ public class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
 
+    /**
+     * @param content the content you want to copy
+     * @param context
+     */
     private fun copy(content: String, context: Context) {
         val manager = context.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
         manager.setPrimaryClip(ClipData.newPlainText("password", content))
