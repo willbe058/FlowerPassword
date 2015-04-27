@@ -40,8 +40,15 @@ public class MainActivity : AppCompatActivity(), View.OnClickListener {
         Toast.makeText(this, message, duration).show()
     }
 
+    private fun<T> id(id: Int): T {
+        return findViewById(id) as T
+
+    }
+
     private fun initView() {
-        memPassET = (findViewById(R.id.mem_pass) as EditText)
+        memPassET = id(R.id.mem_pass)
+
+//        memPassET = (findViewById(R.id.mem_pass) as EditText)
         keyWordET = (findViewById(R.id.keyword) as EditText)
         menu = (findViewById(R.id.menu) as FloatingActionMenu)
         encryptButton = (findViewById(R.id.encryptItem1) as FloatingActionButton)
