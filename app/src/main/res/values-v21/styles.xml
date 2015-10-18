@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+                <!-- Customize your theme here. -->
+                <item name="colorPrimary">@color/indigo</item> 
+                <item name="colorPrimaryDark">@color/indigo_dark</item> 
+                <item name="colorControlHighlight">@color/pink_pre</item> 
+                <item name="android:colorControlHighlight">@color/pink_pre</item> 
+                <item name="colorAccent">@color/pink</item>
+        </style>
+</resources>

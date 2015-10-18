@@ -5,8 +5,7 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/indigo</item> 
         <item name="colorPrimaryDark">@color/indigo_dark</item> 
-        <item name="colorControlHighlight">@color/accent_translucent</item> 
-        <item name="android:colorControlHighlight">@color/accent_translucent</item> 
+        <item name="colorControlHighlight">@color/pink_pre</item> 
         <item name="colorAccent">@color/pink</item>
     </style>
 
